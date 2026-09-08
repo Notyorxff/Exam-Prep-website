@@ -24,7 +24,9 @@
         }
 
 
-        /* NAVIGATION */
+        /* =========================
+           NAVIGATION
+        ========================= */
 
         nav {
             position: sticky;
@@ -65,7 +67,7 @@
         }
 
         nav a {
-            color: #f9e9ee;
+            color: #ffffff;
 
             text-decoration: none;
 
@@ -74,12 +76,22 @@
             transition: 0.3s;
         }
 
+        /* When mouse goes over a link */
+
         nav a:hover {
             color: #f29bb2;
         }
 
+        /* CURRENT PAGE */
 
-        /* HERO */
+        nav a.active {
+            color: #f29bb2;
+        }
+
+
+        /* =========================
+           HERO
+        ========================= */
 
         .hero {
             min-height: 85vh;
@@ -146,7 +158,9 @@
         }
 
 
-        /* BUTTON */
+        /* =========================
+           BUTTON
+        ========================= */
 
         button {
             margin-top: 30px;
@@ -187,7 +201,9 @@
         }
 
 
-        /* WELCOME SECTION */
+        /* =========================
+           WELCOME SECTION
+        ========================= */
 
         .welcome {
             padding: 100px 7%;
@@ -230,7 +246,9 @@
         }
 
 
-        /* CARDS */
+        /* =========================
+           CARDS
+        ========================= */
 
         .cards {
             display: flex;
@@ -285,7 +303,9 @@
         }
 
 
-        /* FOOTER */
+        /* =========================
+           FOOTER
+        ========================= */
 
         footer {
             padding: 45px 20px;
@@ -318,7 +338,9 @@
         }
 
 
-        /* MOBILE */
+        /* =========================
+           MOBILE
+        ========================= */
 
         @media (max-width: 768px) {
 
@@ -378,7 +400,9 @@
 <body>
 
 
-    <!-- NAVIGATION -->
+    <!-- =========================
+         NAVIGATION
+    ========================= -->
 
     <nav>
 
@@ -386,8 +410,10 @@
 
         <ul>
 
+            <!-- HOME IS ACTIVE -->
+
             <li>
-                <a href="index.html">Home</a>
+                <a href="index.html" class="active">Home</a>
             </li>
 
             <li>
@@ -411,7 +437,9 @@
     </nav>
 
 
-    <!-- HERO -->
+    <!-- =========================
+         HERO
+    ========================= -->
 
     <section class="hero">
 
@@ -444,7 +472,9 @@
     </section>
 
 
-    <!-- ABOUT -->
+    <!-- =========================
+         ABOUT
+    ========================= -->
 
     <section class="welcome">
 
@@ -514,7 +544,9 @@
     </section>
 
 
-    <!-- FOOTER -->
+    <!-- =========================
+         FOOTER
+    ========================= -->
 
     <footer>
 

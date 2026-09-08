@@ -62,13 +62,19 @@
         }
 
         nav a {
-            color: #f9e9ee;
+            color: #ffffff;
             text-decoration: none;
             font-weight: 600;
             transition: 0.3s;
         }
 
         nav a:hover {
+            color: #f29bb2;
+        }
+
+        /* CURRENT PAGE */
+
+        nav a.active {
             color: #f29bb2;
         }
 
@@ -720,8 +726,10 @@
                 <a href="schedule.html">Schedule</a>
             </li>
 
+            <!-- RESOURCES IS ACTIVE -->
+
             <li>
-                <a href="resources.html">Resources</a>
+                <a href="resources.html" class="active">Resources</a>
             </li>
 
             <li>
@@ -972,16 +980,7 @@
 
     <script>
 
-        /* =====================================
-           SUBJECTS + LESSON CONTENT
-           ===================================== */
-
         const lessons = {
-
-
-            /* =====================
-               MATHEMATICS
-               ===================== */
 
             math: {
 
@@ -1027,7 +1026,6 @@
                         `
                     },
 
-
                     {
                         title: "Fractions",
 
@@ -1056,7 +1054,6 @@
                         `
                     },
 
-
                     {
                         title: "Algebra",
 
@@ -1082,7 +1079,6 @@
                             </p>
                         `
                     },
-
 
                     {
                         title: "Equations",
@@ -1114,7 +1110,6 @@
                         `
                     },
 
-
                     {
                         title: "Geometry",
 
@@ -1139,7 +1134,6 @@
                             </ul>
                         `
                     },
-
 
                     {
                         title: "Problem Solving",
@@ -1171,10 +1165,6 @@
 
             },
 
-
-            /* =====================
-               SCIENCE
-               ===================== */
 
             science: {
 
@@ -1215,7 +1205,6 @@
                         `
                     },
 
-
                     {
                         title: "Chemistry",
 
@@ -1239,7 +1228,6 @@
                             </ul>
                         `
                     },
-
 
                     {
                         title: "Physics",
@@ -1266,7 +1254,6 @@
                         `
                     },
 
-
                     {
                         title: "Earth Science",
 
@@ -1292,7 +1279,6 @@
                         `
                     },
 
-
                     {
                         title: "The Solar System",
 
@@ -1315,7 +1301,6 @@
                             </p>
                         `
                     },
-
 
                     {
                         title: "Scientific Method",
@@ -1348,10 +1333,6 @@
 
             },
 
-
-            /* =====================
-               ENGLISH
-               ===================== */
 
             english: {
 
@@ -1399,7 +1380,6 @@
                         `
                     },
 
-
                     {
                         title: "Vocabulary",
 
@@ -1424,7 +1404,6 @@
                             </ul>
                         `
                     },
-
 
                     {
                         title: "Reading",
@@ -1451,7 +1430,6 @@
                         `
                     },
 
-
                     {
                         title: "Writing",
 
@@ -1476,7 +1454,6 @@
                             </ul>
                         `
                     },
-
 
                     {
                         title: "Literature",
@@ -1503,7 +1480,6 @@
                             </ul>
                         `
                     },
-
 
                     {
                         title: "Communication",
@@ -1534,10 +1510,6 @@
 
             },
 
-
-            /* =====================
-               SOCIAL STUDIES
-               ===================== */
 
             social: {
 
@@ -1573,7 +1545,6 @@
                         `
                     },
 
-
                     {
                         title: "Geography",
 
@@ -1600,7 +1571,6 @@
                         `
                     },
 
-
                     {
                         title: "Government",
 
@@ -1625,7 +1595,6 @@
                             </ul>
                         `
                     },
-
 
                     {
                         title: "Economics",
@@ -1654,7 +1623,6 @@
                         `
                     },
 
-
                     {
                         title: "Culture and Society",
 
@@ -1681,7 +1649,6 @@
                             </ul>
                         `
                     },
-
 
                     {
                         title: "Civics",
@@ -1716,9 +1683,9 @@
         };
 
 
-        /* =====================================
+        /* =========================
            ELEMENTS
-           ===================================== */
+        ========================= */
 
         const lessonPopup =
             document.getElementById("lessonPopup");
@@ -1739,9 +1706,9 @@
             document.querySelectorAll(".resource-button");
 
 
-        /* =====================================
+        /* =========================
            OPEN SUBJECT
-           ===================================== */
+        ========================= */
 
         resourceButtons.forEach(function(button) {
 
@@ -1828,9 +1795,9 @@
         }
 
 
-        /* =====================================
+        /* =========================
            OPEN INDIVIDUAL LESSON
-           ===================================== */
+        ========================= */
 
         function openLesson(subject, index) {
 
@@ -1877,9 +1844,9 @@
         }
 
 
-        /* =====================================
+        /* =========================
            CLOSE POPUP
-           ===================================== */
+        ========================= */
 
         closePopup.addEventListener(
             "click",
@@ -1895,9 +1862,9 @@
         );
 
 
-        /* =====================================
+        /* =========================
            CLICK OUTSIDE POPUP
-           ===================================== */
+        ========================= */
 
         lessonPopup.addEventListener(
             "click",
@@ -1919,9 +1886,9 @@
         );
 
 
-        /* =====================================
+        /* =========================
            ESC KEY
-           ===================================== */
+        ========================= */
 
         document.addEventListener(
             "keydown",
@@ -1945,5 +1912,4 @@
     </script>
 
 </body>
-
 </html>
